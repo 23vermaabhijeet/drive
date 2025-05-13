@@ -1,0 +1,26 @@
+{
+    "files": [
+        {
+            "filename": "config.txt",
+            "filesize": "49",
+            "type": "file",
+            "path": "/config.txt"
+        },
+        {
+            "filename": "settings.txt",
+            "filesize": "0",
+            "type": "file",
+            "path": "/settings.txt"
+        }
+    ],
+    "dir": [
+        {
+            "dirname": "dir1",
+            "path": "/dir"
+        },
+        {
+            "dirname": "dir2",
+            "path": "/dir2"
+        }
+    ]
+}
