@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+    #head {
+        width: 2vw;
+        font-size: 40px;
+    }
+}
