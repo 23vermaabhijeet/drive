@@ -25,8 +25,33 @@ export default function Table() {
 
     return (
         <div>
+
             {bcumbs}
-            <div>{data}</div>
+            <br />
+            <table>
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" className="px-6 py-3 text-center">
+                            File
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-center">
+                            Something
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-center">
+                            Download
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-center">
+                            Edit
+                        </th>
+                        <th scope="col" className="px-6 py-3 text-center">
+                            Delete
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {(data.length > 0) ? data : <tr><td className="px-6 py-3 text-center" colSpan={6}>No file present</td></tr>}
+                </tbody>
+            </table>
         </div>
     );
 }

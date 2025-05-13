@@ -22,13 +22,13 @@ function Row({ prop }){
             xhttp.open("POST", delete_path, true);
             xhttp.send(null);
         }
+        console.log(prop);
     }
     return(
         <>
             <tr className="text-center bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="px-6 py-4"><a href={prop.path} style={{textDecoration: "none", all: "unset", cursor: "pointer"}}>{prop.filename}</a></td>
-                <td className="px-6 py-4">{prop.filesize}</td>
-                <td className="px-6 py-4 uppercase">{prop.type}</td>
+                <td className="px-6 py-4"><a href={prop.codice_fiscale} style={{textDecoration: "none", all: "unset", cursor: "pointer"}}>{prop.codice_fiscale}</a></td>
+                <td className="px-6 py-4">{prop.ordinazione}</td>
                 <td className="px-6 py-4">{
                     <a href={prop.path} download>
                         <button type="button" className={`w-32 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800`}>Download</button>

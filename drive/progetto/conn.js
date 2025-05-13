@@ -22,7 +22,7 @@ db.connect(err => {
 });
 
 app.get('/api/dati', (req, res) => {
-    const query = 'SELECT * FROM prenotazioni';
+    const query = 'SELECT * FROM prenotazione';
     db.query(query, (err, results) => {
         if (err) {
             console.error('Errore nella query:', err);
